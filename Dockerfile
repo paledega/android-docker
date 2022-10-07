@@ -6,6 +6,7 @@ RUN apt install bc bison build-essential ccache curl flex g++-multilib gcc-multi
     libelf-dev liblz4-tool libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev \
     libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc \
     zip zlib1g-dev rsync procps python3 -y
+RUN apt clean
 RUN ln -s python3 /usr/bin/python
 RUN curl https://storage.googleapis.com/git-repo-downloads/repo > /bin/repo
 RUN chmod a+x /bin/repo
